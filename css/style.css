@@ -1,0 +1,133 @@
+@charset "utf-8"
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: #F2F3F4;
+  font-family: verdana;
+  margin: 0 auto;
+}
+
+#encabezado {
+  background: #D0D3D4;
+  width: 96%;
+  height: 100%;
+  padding: 2%;
+}
+
+
+#wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#banner-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 5% 0;
+}
+
+
+.encabezadoseccion {
+  background: #D4EFDF;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+}
+
+#tituloprincipal {
+  font-size: 200%;
+  line-height: 120%;
+  font-weight: 400;
+  color: #FDFEFE;
+  text-align: center;
+  padding: 3%;
+}
+
+#botonera {
+	background: #F9E79F;
+	width: 100%;
+	height: 50px;
+}
+
+
+#boton {
+  font-size: 100%;
+  font-family: verdana;
+  font-size: 80%;
+  display: inline-block;
+  margin: 12px;
+  padding: 4px;
+}
+
+#barraderecha {
+	background: #CD6155;
+	float: left;
+	/*height: 3080px;*/
+	width: 350px;
+	padding: 2%;
+}
+
+#camposeccion {
+	background: #AED6F1;
+	padding: 2%;
+	width: 96%;
+	height: 100%;
+}
+
+
+#fondopie {
+  background: #5B2C6F;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+
+#barrapie {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0 3% 0;
+}
+
+
+.icon-text-text {
+  float: left;
+  width: 100%;
+  padding: 4% 4% 2% 0;
+  font-size:
+}
+
+.social {
+  list-style-type: none;
+  text-align: center;
+}
+
+.social li {
+  display: inline;
+}
+
+.social i {
+  font-size: 300%;
+  margin: 1%;
+  padding: 5%;
+  color: #D7BDE2;
+}
+
+.social i:hover {
+  color: #FDFEFE;
+}
+
+small {
+  text-align: center;
+  color: #F5EEF8;
+  font-size: 80%;
+  line-height: 150%;
+  margin: 1%;
+  padding: 5%;
+}

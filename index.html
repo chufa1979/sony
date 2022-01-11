@@ -5,20 +5,31 @@
 		archivos javascript, archivos internos
 		iconos, titulo de la pagina web
 		etiquetas META-->
-		<meta charset="iso-8559-1"/>
-		<meta name="description" content= Página de porfolio laboral"/>
+		<meta charset="utf-8">
+		<meta name="description" content= "Página de porfolio laboral"/>
 		<meta name="keywords" content="html5, css3, JavaScript, diseño web"/>
+		<link rel="stylesheet" href="css/style.css"/>
 		<link rel="icon" href="img/iconosolapa.png">
 		<title>Porfolio Web | Sonia Pereira</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="hojaestilos.css"/>
 	</head>
 
 	<body>
-		<header>
+		<!-- MAIN WRAPPER -->
+		<div id="wrapper">
+
+		<!-- BANNER WRAPPER -->
+		<div id="banner-wrapper">
+		  <header>
+			<div id="header-inner">
+			  <a href="#" id="logo">
+				<img src="img/pics/fazt_logo.png" alt="">
+			  </a>
+		
+		<header id="encabezado">
 			<!-- SLIDER -->
 			<div id="slide-wrap">
 				<section class="slider">
@@ -26,25 +37,25 @@
 					<li><img src="img/slider/slider1.jpg" alt=""></li>
 					<li><img src="img/slider/slider2.jpg" alt=""></li>
 					<li><img src="img/slider/slider3.jpg" alt=""></li>
+					<li><img src="img/slider/slider4.jpg" alt=""></li>
 				  </ul>
 				</section>
 			</div>
 			<div>
-				<h1>Porfolio Web | Sonia Pereira</h1>
+				<h1 id="tituloprincipal">Porfolio Web | Sonia Pereira</h1>
 				<img src="img/perfilchica.jpg" alt="">
 				<p>Técnica Informática</p>
 				<p>Buenos Aires, Argentina | Información de contacto</p>
 			</div>
 		</header>
 
-		<nav>
-			<input type="button" value="Tengo interes en"><br>
-            <input type="button" value="Añadir Sección"><br>
-			<input type="button" value="Más"><br>
+		<nav id="botonera">
+			<input id="boton" type="button" value="Tengo interes en">
+            <input id="boton" type="button" value="Añadir Sección">
+			<input id="boton" type="button" value="Más">
 		</nav>
 		
-		<br>
-		<aside>
+		<aside id="barraderecha">
 			<ul>
 				<li>Instrucción y Formación Profesional </li>
 				<li>Formación Técnica Informática </li>
@@ -54,12 +65,12 @@
 			</ul>
 		</aside>
 
-		<section>
+		<section id="camposeccion">
 			<article>
-				<header>
+				<header class="encabezadoseccion">
 					<hgroup>
-						<h2>Formación Universitaria: Licenciatura en Sistemas</h2>
-						<h3>Facultad de Ingeniería,Universidad de Buenos Aires</h3>
+						<p><strong>Formación Universitaria: Licenciatura en Sistemas</strong></p>
+						<p>Facultad de Ingeniería, Universidad de Buenos Aires</p>
 						<p>Año 1998</p>
 					</hgroup>
 				</header>
@@ -75,13 +86,13 @@
 			</article>
 			
 			<article>
-				<header>
+				<header class="encabezadoseccion">
 					<hgroup>
-						<h2>Formación Terciaria: Analista de Sistemas</h2>
-						<h3>Instituto Superior Mariano Moreno</h3>
+						<p><strong>Formación Terciaria: Analista de Sistemas</strong></p>
+						<p>Instituto Superior Mariano Moreno</p>
 						<p>Año 1995</p>
-						<h2>Analista Programador</h2>
-						<h3>Instituto Superior Mariano Moreno</h3>
+						<p><strong>Analista Programador</strong><p>
+						<p>Instituto Superior Mariano Moreno</p>
 						<p>Año 1994</p>
 					</hgroup>
 				</header>
@@ -96,10 +107,10 @@
 			</article>	
 			
 			<article>
-				<header>
+				<header class="encabezadoseccion">
 					<hgroup>
-						<h2>Técnico Superior en Armado, Reparación de PC y Redes</h2>
-						<h3>Instituto FUCE </h3>
+						<p><strong>Técnico Superior en Armado, Reparación de PC y Redes</strong><p>
+						<p>Instituto FUCE </p>
 						<p>Año 2002</p>
 					</hgroup>
 				</header>
@@ -108,13 +119,13 @@
 					<p>Comentarios de usuarios</p>
 				</footer>
 			</article>
-		</section>
 		
-		<article>
-				<header>
+		
+			<article>
+				<header class="encabezadoseccion">
 					<hgroup>
-						<h2>Formación Secundaria: Bachiller con Orientación Docente</h2>
-						<h3>Escuela Superior Normal Nro. 10 Juan Bautista Alberdi</h3>
+						<p><strong>Formación Secundaria: Bachiller con Orientación Docente</strong><p>
+						<p>Escuela Superior Normal Nro. 10 Juan Bautista Alberdi</p>
 						<p>Año 1992</p>
 					</hgroup>
 				</header>
@@ -129,10 +140,11 @@
 			</article>	
 
 			<article>
-				<header>
+				<header class="encabezadoseccion">
 					<hgroup>
-						<h2>Formación Técnica Informática: Administración de Sistemas Operativos y redes</h2>
-						<p>Instalación y mantenimiento de redes y servicios de red (topología, cableado, sistemas operativos de red). Redes Ethernetestándar y redes wireless.
+						<p><strong>Formación Técnica Informática: Administración de Sistemas Operativos y redes</strong><p>
+						<p>
+						Instalación y mantenimiento de redes y servicios de red (topología, cableado, sistemas operativos de red). Redes Ethernetestándar y redes wireless.
 						Administración de protocolos TCP/IP, FTP, HTTP, HTTPS, SMTP, POP, TELNET, IMAP.
 						Configuración de Redes, Firewall, Routers,programación en Shell script, gestión de usuarios (altas, modificaciones y bajas).
 						Administración de recursos, sistemas GNU/Linux como gestores de red, integración con redes Windows.
@@ -146,9 +158,9 @@
 			</article>	
 			
 			<article>
-				<header>
+				<header class="encabezadoseccion">
 					<hgroup>
-						<h2>Programación</h2>
+						<p><strong>Programación</strong><p>
 						<p>Programación en Visual Basic, sobre bases de datos Access, Dbase, SQL Server y automatización mediante VBA (Excel y Word)
 						Conocimientos de programación en entornos web: Javascript, VBScript, PHP, ASP, Perl. Publicación en web de bases de datos.
 						</p>
@@ -157,9 +169,9 @@
 			</article>
 			
 			<article>
-				<header>
+				<header class="encabezadoseccion">
 					<hgroup>
-						<h2>Diseño Páginas Web</h2>
+						<p><strong>Diseño Páginas Web</strong><p>
 						<p>Lenguaje HTML, Paquete Macromedia, Comercio electrónico, Promoción Web, Redes Sociales.
 						</p>
 					</hgroup>
@@ -167,9 +179,9 @@
 			</article>
 			
 			<article>
-				<header>
+				<header class="encabezadoseccion">
 					<hgroup>
-						<h2>Diseño Gráfico</h2>
+						<p><strong>Diseño Gráfico</strong><p>
 						<p>Paquete Adobe Master Collection, programa de autoedición QuarkXPress.
 						</p>
 					</hgroup>
@@ -178,10 +190,10 @@
 			
 			
 			<article>
-				<header>
+				<header class="encabezadoseccion">
 					<hgroup>
-						<h2>Idiomas: Italiano</h2>
-						<h3>Instituto Italiano di Cultura di Buenos Aires.</h3>
+						<p><strong>Idiomas: Italiano</strong><p>
+						<p>Instituto Italiano di Cultura di Buenos Aires.</p>
 						<p>Certificación oficial como lengua extranjera. Nivel B2, Avanzado.
 						Dominio bilingüe. 
 						</p>
@@ -199,7 +211,7 @@
 			
 			<article>
 			<h2>Experiencia Laboral</h2>
-				<header>
+				<header class="encabezadoseccion">
 					<hgroup>
 						<h3>Ministerio de Desarrollo Social de la Nación</h3>
 						<h4>Función: Técnico Profesional</h4>
@@ -225,7 +237,7 @@
 			</article>
 			
 			<article>
-				<header>
+				<header class="encabezadoseccion">
 					<hgroup>
 						<h3>Dirección General de Educación Vial y Licencias del Gobierno de la Ciudad</h3>
 						<h4>Función: Instructor de Cursos de Otorgamiento de Licencias Particulares y Prevención de Accidentes</h4>
@@ -251,7 +263,7 @@
 			</article>
 			
 			<article>
-				<header>
+				<header class="encabezadoseccion">
 					<hgroup>
 						<h3>ICONTEAM diseño de sitios web y hosting</h3>
 						<h4>Función: Soporte Técnico Informático y Diseñador Web.</h4>
@@ -276,7 +288,7 @@
 			</article>
 			
 			<article>
-				<header>
+				<header class="encabezadoseccion">
 					<hgroup>
 						<h3>ELSERVER SRL desarrollo de sitios web y servicio de hosting</h3>
 						<h4>Función: Soporte Técnico Informático y Diseñador Web</h4>
@@ -308,7 +320,7 @@
 			
 			<article>
 			<h2>Cursos Dictados y Trabajo FreeLancer</h2>
-				<header>
+				<header class="encabezadoseccion">
 					<hgroup>
 						<h3>Trabajos eventuales y por cuenta propia: </h3>
 						<div>
@@ -340,7 +352,7 @@
 			
 			<article>
 			<h2>Capacidades y Competencias</h2>
-				<header>
+				<header class="encabezadoseccion">
 					<hgroup>
 							<ul>
 								<li>Actitud proactiva </li>
@@ -362,10 +374,11 @@
 					<p>Comentarios de usuarios</p>
 				</footer>
 			</article>
-			
+		</section>
+		
 		<!-- FOOTER -->
-		<footer>
-			<div class="banner-wrapper">
+		<footer id="fondopie">
+			<div class="barrapie">
 				<div class="icon-text-text">
 				  <ul class="social">
 					<li>
@@ -394,7 +407,7 @@
 					  </a>
 					</li>
 				  </ul>
-				  <small>Derechos reservados @sonygahan</small>
+				  <small>&copy; Derechos reservados <strong>@sonygahan</strong></small>
 				</div>
 			</div>
 		</footer>
@@ -409,6 +422,9 @@
 				mode: 'fade',
 			  });
 			  $('.slider3').bxSlider({
+				mode: 'fade',
+			  });
+			  $('.slider4').bxSlider({
 				mode: 'fade',
 			  });
 			});
